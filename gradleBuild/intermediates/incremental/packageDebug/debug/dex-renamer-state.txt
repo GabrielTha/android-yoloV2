@@ -1,0 +1,4 @@
+#Mon Jan 13 00:43:36 BRST 2020
+base.0=/home/gabriel/Documentos/VRI_IAPAR/android-yolo-v2/gradleBuild/intermediates/transforms/dexMerger/debug/0
+path.0=classes.dex
+renamed.0=classes.dex
