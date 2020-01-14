@@ -13,7 +13,7 @@ public class VerifyClassification {
         for (int i = 0; i < lista.size(); i++){
             Recognition reconhecido;
             reconhecido = lista.get(i);
-            if (reconhecido.getTitle().equals("sofa")){
+            if (reconhecido.getTitle().equals("fossa")){
                 if (flag == false){
                     flag = true;
                 }
@@ -32,7 +32,7 @@ public class VerifyClassification {
         for (int i = 0; i < lista.size(); i++){
             Recognition reconhecido;
             reconhecido = lista.get(i);
-            if (reconhecido.getTitle().equals("sofa")){
+            if (reconhecido.getTitle().equals("boca")){
                 return(true);
             }
         }
@@ -40,10 +40,7 @@ public class VerifyClassification {
     }
 
     public String verifyList(List<Recognition> lista){
-//        if(this.verifyBoca(lista) && this.verifyFossa(lista)){
-//            return("Achou");
-//        }
-        if(this.verifyBoca(lista)){
+        if(this.verifyBoca(lista) && this.verifyFossa(lista)){
             return("Achou");
         }
         return ("Não achou");

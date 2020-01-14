@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
 
   <!--
          Declare custom theme attributes that allow changing which styles are

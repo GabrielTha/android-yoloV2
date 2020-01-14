@@ -22,8 +22,7 @@ public class ImageSave {
     private String ImagePath;
 
     public void SaveImage(Bitmap ImageToSave){
-        AbleToSave();
-        String file_path = Environment.getExternalStorageDirectory().getAbsolutePath()+ NameOfFolder;
+        String file_path = Environment.getExternalStorageDirectory().getAbsolutePath() + NameOfFolder;
         String CurrentDateAndTime= getCurrentDateAndTime();
         File dir = new File(file_path);
         if(!dir.exists()){
@@ -32,10 +31,9 @@ public class ImageSave {
         File file = new File(dir, NameOfFile +CurrentDateAndTime+ ".jpg");
         try{
             FileOutputStream fOut = new FileOutputStream(file);
-            ImageToSave.compress(Bitmap.CompressFormat.JPEG, 85, fOut);
+            ImageToSave.compress(Bitmap.CompressFormat.JPEG, 100, fOut);
             fOut.flush();
             fOut.close();
-            AbleToSave();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -51,7 +49,7 @@ public class ImageSave {
         return formattedDate;
     }
 
-    private void AbleToSave() {
-        Toast.makeText(TheThis, "Picture saved be saved", Toast.LENGTH_SHORT).show();
+    private void Buttons() {
+
     }
 }
